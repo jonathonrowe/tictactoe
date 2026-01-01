@@ -1,4 +1,4 @@
-import pygame
+import pygame # type: ignore
 from constants import *
 
 def draw_lines(display):
@@ -19,14 +19,12 @@ def main():
     clock = pygame.time.Clock()
     dt = 0
 
-    
-
     running = True
     while running:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
-                
+
         screen.fill(WHITE)
         draw_lines(screen)
 
